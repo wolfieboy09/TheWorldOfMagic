@@ -14,6 +14,9 @@ public class ModItems {
     public static final RegistryObject<Item> BEGINNER_STAFF = ITEMS.register("beginner_staff",
             () -> new Item(new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> CLOUDIUM = ITEMS.register("cloudium",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

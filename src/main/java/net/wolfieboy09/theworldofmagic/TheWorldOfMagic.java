@@ -40,6 +40,7 @@ public class TheWorldOfMagic {
             event.accept(ModItems.BEGINNER_STAFF);
         } else if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.WITHERED_GRASS_BLOCK);
+            event.accept(ModItems.CLOUDIUM);
         }
     }
 }

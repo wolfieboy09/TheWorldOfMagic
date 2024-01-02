@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BEGINNER_STAFF.get());
                         pOutput.accept(ModBlocks.WITHERED_GRASS_BLOCK.get());
+                        pOutput.accept(ModItems.CLOUDIUM.get());
                     }).build());
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
