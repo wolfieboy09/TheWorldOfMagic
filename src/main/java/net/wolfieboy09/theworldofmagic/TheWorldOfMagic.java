@@ -21,7 +21,7 @@ public class TheWorldOfMagic {
     private static final Logger LOGGER = LogUtils.getLogger();
 
 
-    public TheWorldOfMagic() {
+    public  TheWorldOfMagic() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeModeTabs.register(modEventBus);
@@ -35,12 +35,15 @@ public class TheWorldOfMagic {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {}
+
+    // need to redo block category
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.BEGINNER_STAFF);
         } else if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.WITHERED_GRASS_BLOCK);
             event.accept(ModItems.CLOUDIUM);
+            event.accept(ModBlocks.CLOUDIUM_BLOCK);
         }
     }
 }

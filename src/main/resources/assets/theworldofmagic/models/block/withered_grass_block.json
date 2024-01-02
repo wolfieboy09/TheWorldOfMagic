@@ -1,6 +1,7 @@
 {
 	"textures": {
 		"parent": "theworldofmagic:block/withered_grass_block",
+		"particle": "theworldofmagic:block/cloudium_block",
 		"1": "theworldofmagic:block/withered_grass_block"
 	},
 	"elements": [

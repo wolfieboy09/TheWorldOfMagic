@@ -1,0 +1,6 @@
+{
+  "textures": {
+    "parent": "theworldofmagic:block/cloudium_block",
+    "particle": "theworldofmagic:block/cloudium_block"
+  }
+}
