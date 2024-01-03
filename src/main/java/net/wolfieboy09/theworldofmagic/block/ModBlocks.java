@@ -16,6 +16,7 @@ import net.wolfieboy09.theworldofmagic.item.ModItems;
 import java.util.function.Supplier;
 
 public class ModBlocks {
+
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TheWorldOfMagic.MOD_ID);
 
@@ -32,7 +33,7 @@ public class ModBlocks {
         return toReturn;
     }
 
-    // IDE said that the "return" statement was never being used, and made it a void function
+    // IDE said that the "return" statement was never being used, a nd made it a void function
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }

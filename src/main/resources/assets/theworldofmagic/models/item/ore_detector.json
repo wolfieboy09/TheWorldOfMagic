@@ -1,0 +1,125 @@
+{
+	"textures": {
+		"0": "theworldofmagic:item/ore_detector",
+		"particle": "theworldofmagic:item/ore_detector"
+	},
+	"elements": [
+		{
+			"name": "stand",
+			"from": [1, -1, 3],
+			"to": [3, 0, 15],
+			"rotation": {"angle": -22.5, "axis": "x", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [6, 11, 8, 12], "texture": "#0"},
+				"east": {"uv": [4, 0, 16, 1], "texture": "#0"},
+				"south": {"uv": [11, 6, 13, 7], "texture": "#0"},
+				"west": {"uv": [4, 1, 16, 2], "texture": "#0"},
+				"up": {"uv": [2, 12, 0, 0], "texture": "#0"},
+				"down": {"uv": [4, 0, 2, 12], "texture": "#0"}
+			}
+		},
+		{
+			"name": "handle",
+			"from": [1, 4, 13],
+			"to": [3, 6, 15],
+			"faces": {
+				"north": {"uv": [6, 4, 8, 6], "texture": "#0"},
+				"east": {"uv": [6, 6, 8, 8], "texture": "#0"},
+				"south": {"uv": [8, 2, 10, 4], "texture": "#0"},
+				"west": {"uv": [4, 8, 6, 10], "texture": "#0"},
+				"up": {"uv": [10, 6, 8, 4], "texture": "#0"},
+				"down": {"uv": [8, 8, 6, 10], "texture": "#0"}
+			}
+		},
+		{
+			"name": "front",
+			"from": [0, 0, 0],
+			"to": [3, 1, 1],
+			"faces": {
+				"north": {"uv": [8, 6, 11, 7], "texture": "#0"},
+				"east": {"uv": [11, 7, 12, 8], "texture": "#0"},
+				"south": {"uv": [8, 7, 11, 8], "texture": "#0"},
+				"west": {"uv": [8, 11, 9, 12], "texture": "#0"},
+				"up": {"uv": [11, 9, 8, 8], "texture": "#0"},
+				"down": {"uv": [11, 9, 8, 10], "texture": "#0"}
+			}
+		},
+		{
+			"name": "back",
+			"from": [0, 0, 3],
+			"to": [3, 1, 4],
+			"faces": {
+				"north": {"uv": [10, 4, 13, 5], "texture": "#0"},
+				"east": {"uv": [11, 11, 12, 12], "texture": "#0"},
+				"south": {"uv": [10, 5, 13, 6], "texture": "#0"},
+				"west": {"uv": [0, 12, 1, 13], "texture": "#0"},
+				"up": {"uv": [9, 11, 6, 10], "texture": "#0"},
+				"down": {"uv": [12, 10, 9, 11], "texture": "#0"}
+			}
+		},
+		{
+			"name": "side",
+			"from": [3, 0, 0],
+			"to": [4, 1, 4],
+			"faces": {
+				"north": {"uv": [11, 9, 12, 10], "texture": "#0"},
+				"east": {"uv": [4, 2, 8, 3], "texture": "#0"},
+				"south": {"uv": [10, 11, 11, 12], "texture": "#0"},
+				"west": {"uv": [4, 3, 8, 4], "texture": "#0"},
+				"up": {"uv": [5, 8, 4, 4], "texture": "#0"},
+				"down": {"uv": [6, 4, 5, 8], "texture": "#0"}
+			}
+		},
+		{
+			"name": "side",
+			"from": [0, 0, 0],
+			"to": [1, 1, 3],
+			"faces": {
+				"north": {"uv": [11, 8, 12, 9], "texture": "#0"},
+				"east": {"uv": [10, 2, 13, 3], "texture": "#0"},
+				"south": {"uv": [9, 11, 10, 12], "texture": "#0"},
+				"west": {"uv": [10, 3, 13, 4], "texture": "#0"},
+				"up": {"uv": [5, 13, 4, 10], "texture": "#0"},
+				"down": {"uv": [6, 10, 5, 13], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [68, 0, 0],
+			"translation": [6, 6.25, 0.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [68, 0, 0],
+			"translation": [-6.5, 6, 0.5]
+		},
+		"firstperson_righthand": {
+			"translation": [4, 5.75, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [-8.25, 6.25, 0]
+		},
+		"ground": {
+			"translation": [5.75, 6.75, 1]
+		},
+		"gui": {
+			"rotation": [74.38, -45.73, 2.06],
+			"translation": [3.5, -5.5, 0]
+		},
+		"fixed": {
+			"rotation": [-58.25, 67.97, -5.13],
+			"translation": [3.5, 0, -7.25]
+		}
+	},
+	"groups": [
+		0,
+		1,
+		{
+			"name": "base",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"nbt": "{}",
+			"children": [2, 3, 4, 5]
+		}
+	]
+}

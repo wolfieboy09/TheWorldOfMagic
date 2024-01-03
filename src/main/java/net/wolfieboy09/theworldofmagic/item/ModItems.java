@@ -17,6 +17,9 @@ public class ModItems {
     public static final RegistryObject<Item> CLOUDIUM = ITEMS.register("cloudium",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ORE_DETECTOR = ITEMS.register("ore_detector",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

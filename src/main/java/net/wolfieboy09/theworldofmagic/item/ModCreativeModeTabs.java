@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.WITHERED_GRASS_BLOCK.get());
                         pOutput.accept(ModItems.CLOUDIUM.get());
                         pOutput.accept(ModBlocks.CLOUDIUM_BLOCK.get());
+                        pOutput.accept(ModItems.ORE_DETECTOR.get());
                     }).build());
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
