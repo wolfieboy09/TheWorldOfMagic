@@ -25,7 +25,5 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CLOUDIUM_BLOCK.get());
                         pOutput.accept(ModItems.ORE_DETECTOR.get());
                     }).build());
-    public static void register(IEventBus eventBus) {
-        CREATIVE_MODE_TABS.register(eventBus);
-    }
+    public static void register(IEventBus eventBus) { CREATIVE_MODE_TABS.register(eventBus); }
 }
