@@ -17,7 +17,7 @@ import org.slf4j.Logger;
 @Mod(TheWorldOfMagic.MOD_ID)
 public class TheWorldOfMagic {
     public static final String MOD_ID = "theworldofmagic";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    // private static final Logger LOGGER = LogUtils.getLogger();
 
 
     public  TheWorldOfMagic() {
