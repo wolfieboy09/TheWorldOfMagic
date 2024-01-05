@@ -14,9 +14,9 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TheWorldOfMagic.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> STAFF_TAB = CREATIVE_MODE_TABS.register("magic_staff_tab",
+    public static final RegistryObject<CreativeModeTab> STAFF_TAB = CREATIVE_MODE_TABS.register("theworldofmagic_main_title_name",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BEGINNER_STAFF.get()))
-                    .title(Component.translatable("creativetab.theworldofmagic_items_tab"))
+                    .title(Component.translatable("creativetab.theworldofmagic_main_title_name"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BEGINNER_STAFF.get());
                         pOutput.accept(ModBlocks.WITHERED_GRASS_BLOCK.get());
