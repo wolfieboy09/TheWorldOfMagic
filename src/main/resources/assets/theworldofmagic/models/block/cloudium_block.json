@@ -1,6 +1,25 @@
 {
   "textures": {
-    "parent": "theworldofmagic:block/cloudium_block",
-    "particle": "theworldofmagic:block/cloudium_block"
+    "parent": "theworldofmagic:block/cloudium_block"
+  },
+  "elements": [
+    {
+      "name": "block",
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {"uv": [4, 4, 8, 8], "texture": "#parent"},
+        "east": {"uv": [8, 8, 12, 12], "texture": "#parent"},
+        "south": {"uv": [4, 12, 8, 16], "texture": "#parent"},
+        "west": {"uv": [0, 8, 4, 12], "texture": "#parent"},
+        "up": {"uv": [12, 0, 16, 4], "texture": "#parent"},
+        "down": {"uv": [12, 12, 16, 16], "texture": "#parent"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "scale": [0.3, 0.3, 0.3]
+    }
   }
 }

@@ -2,7 +2,6 @@ package net.wolfieboy09.theworldofmagic;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
@@ -42,6 +41,7 @@ public class TheWorldOfMagic {
             event.accept(ModItems.BEGINNER_STAFF);
         } else if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.WITHERED_GRASS_BLOCK);
+            event.accept(ModItems.RAW_CLOUDIUM);
             event.accept(ModItems.CLOUDIUM);
             event.accept(ModBlocks.CLOUDIUM_BLOCK);
         }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "theworldofmagic:item/cloudium_block"
+    "layer0": "theworldofmagic:item/raw_cloudium"
   }
 }

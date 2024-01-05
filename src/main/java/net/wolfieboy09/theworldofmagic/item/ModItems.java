@@ -12,13 +12,18 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TheWorldOfMagic.MOD_ID);
 
     public static final RegistryObject<Item> BEGINNER_STAFF = ITEMS.register("beginner_staff",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+            ));
 
     public static final RegistryObject<Item> CLOUDIUM = ITEMS.register("cloudium",
             () -> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item> RAW_CLOUDIUM = ITEMS.register("raw_cloudium",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ORE_DETECTOR = ITEMS.register("ore_detector",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+            ));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

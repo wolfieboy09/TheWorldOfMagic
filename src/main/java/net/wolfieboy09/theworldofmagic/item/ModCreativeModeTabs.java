@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BEGINNER_STAFF.get());
                         pOutput.accept(ModBlocks.WITHERED_GRASS_BLOCK.get());
+                        pOutput.accept(ModItems.RAW_CLOUDIUM.get());
                         pOutput.accept(ModItems.CLOUDIUM.get());
                         pOutput.accept(ModBlocks.CLOUDIUM_BLOCK.get());
                         pOutput.accept(ModItems.ORE_DETECTOR.get());
