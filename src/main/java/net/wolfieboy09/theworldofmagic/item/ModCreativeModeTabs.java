@@ -9,7 +9,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.wolfieboy09.theworldofmagic.TheWorldOfMagic;
 import net.wolfieboy09.theworldofmagic.block.ModBlocks;
-//TODO Fix "THEWORLDOFMAGIC_MAIN_TAB" Not being used issue (mess-up somewhere in code)
+//TODO Fix "THEWORLDOFMAGIC_MAIN_TAB" Not being used issue (mess-up somewhere in code.)
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TheWorldOfMagic.MOD_ID);
