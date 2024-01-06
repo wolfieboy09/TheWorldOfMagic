@@ -1,6 +1,5 @@
 package net.wolfieboy09.theworldofmagic;
 
-import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -12,7 +11,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.wolfieboy09.theworldofmagic.block.ModBlocks;
 import net.wolfieboy09.theworldofmagic.item.ModCreativeModeTabs;
 import net.wolfieboy09.theworldofmagic.item.ModItems;
-import org.slf4j.Logger;
+import org.jetbrains.annotations.NotNull;
 
 @Mod(TheWorldOfMagic.MOD_ID)
 public class TheWorldOfMagic {
@@ -36,7 +35,7 @@ public class TheWorldOfMagic {
     private void commonSetup(final FMLCommonSetupEvent event) {}
 
     // need to redo block category
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+    private void addCreative(@NotNull BuildCreativeModeTabContentsEvent  event) {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.BEGINNER_STAFF);
         } else if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
