@@ -1,5 +1,10 @@
 {
   "item.theworldofmagic.beginner_staff": "First stik",
-  "creativetab.theworldofmagic_items_tab": "kitth magic",
-  "block.theworldofmagic.withered_grass_block": "scawy gwass blok"
+  "item.theworldofmagic.raw_cloudium": "wet clod",
+  "item.theworldofmagic.cloudium": "cloud :O",
+
+  "creativetab.theworldofmagic_main_title_name": "kitth magic",
+
+  "block.theworldofmagic.withered_grass_block": "scawy gwass blok",
+  "block.theworldofmagic.cloudium_block": "soid clod"
 }

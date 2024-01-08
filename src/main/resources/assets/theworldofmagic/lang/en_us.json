@@ -1,5 +1,10 @@
 {
   "item.theworldofmagic.beginner_staff": "Beginner Staff",
-  "creativetab.theworldofmagic_main_title_name": "The World Of Magic",
-  "block.theworldofmagic.withered_grass_block": "Withered Grass Block"
+  "item.theworldofmagic.raw_cloudium": "Raw Cloudium",
+  "item.theworldofmagic.cloudium": "Cloudium",
+
+  "block.theworldofmagic.withered_grass_block": "Withered Grass Block",
+  "block.theworldofmagic.cloudium_block": "Cloudium Block",
+
+  "creativetab.theworldofmagic_main_title_name": "The World Of Magic"
 }

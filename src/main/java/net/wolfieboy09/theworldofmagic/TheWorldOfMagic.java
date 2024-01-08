@@ -34,7 +34,8 @@ public class TheWorldOfMagic {
 
     private void commonSetup(final FMLCommonSetupEvent event) {}
 
-    // need to redo block category
+    // IDE told me to put @NotNull in
+    //TODO Redo block category
     private void addCreative(@NotNull BuildCreativeModeTabContentsEvent  event) {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.BEGINNER_STAFF);

@@ -1,17 +1,13 @@
 {
-  "type": "minecraft:crafting_shape",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
-  "key": {
-    "#": {
-      "item": "theworldofmagic:cloudium"
+  "ingredients": [
+    {
+      "item": "theworldofmagic:cloudium_block"
     }
-  },
+  ],
   "result": {
-    "item": "theworldofmagic:cloudium_block"
+    "item": "theworldofmagic:cloudium",
+    "count": 9
   }
 }
