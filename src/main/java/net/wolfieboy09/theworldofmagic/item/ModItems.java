@@ -25,7 +25,6 @@ public class ModItems {
             () -> new OreDetectorItem(new Item.Properties()
                     .stacksTo(1)
                     .durability(100)
-                    .
             ));
 
     public static void register(IEventBus eventBus) {
