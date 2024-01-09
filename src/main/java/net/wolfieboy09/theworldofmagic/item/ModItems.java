@@ -24,6 +24,8 @@ public class ModItems {
     public static final RegistryObject<Item> ORE_DETECTOR = ITEMS.register("ore_detector",
             () -> new OreDetectorItem(new Item.Properties()
                     .stacksTo(1)
+                    .durability(100)
+                    .
             ));
 
     public static void register(IEventBus eventBus) {
