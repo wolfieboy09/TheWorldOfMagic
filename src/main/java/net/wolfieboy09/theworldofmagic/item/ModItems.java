@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.wolfieboy09.theworldofmagic.TheWorldOfMagic;
+import net.wolfieboy09.theworldofmagic.item.custom.OreDetectorItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -21,7 +22,7 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_CLOUDIUM = ITEMS.register("raw_cloudium",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ORE_DETECTOR = ITEMS.register("ore_detector",
-            () -> new Item(new Item.Properties()
+            () -> new OreDetectorItem(new Item.Properties()
                     .stacksTo(1)
             ));
 
