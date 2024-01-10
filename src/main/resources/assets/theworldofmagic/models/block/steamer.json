@@ -151,8 +151,13 @@
 			"color": 0,
 			"nbt": "{}",
 			"children": [
-				0,
-				1,
+				{
+					"name": "things",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"nbt": "{}",
+					"children": [0, 1]
+				},
 				{
 					"name": "insider",
 					"origin": [0, 0, 0],
