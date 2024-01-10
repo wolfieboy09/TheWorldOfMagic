@@ -15,15 +15,21 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TheWorldOfMagic.MOD_ID);
     public static final RegistryObject<CreativeModeTab> THEWORLDOFMAGIC_MAIN_TAB = CREATIVE_MODE_TABS.register("theworldofmagic_main_title_name",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModItems.BEGINNER_STAFF.get()))
+                    .icon(() -> new ItemStack(ModItems.BURNABLE_CRYSTAL.get()))
                     .title(Component.translatable("creativetab.theworldofmagic_main_title_name"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BEGINNER_STAFF.get());
+
                         pOutput.accept(ModBlocks.WITHERED_GRASS_BLOCK.get());
+
                         pOutput.accept(ModItems.ORANGE.get());
+
+                        pOutput.accept(ModItems.BURNABLE_CRYSTAL.get());
+
                         pOutput.accept(ModItems.RAW_CLOUDIUM.get());
                         pOutput.accept(ModItems.CLOUDIUM.get());
                         pOutput.accept(ModBlocks.CLOUDIUM_BLOCK.get());
+
                         pOutput.accept(ModItems.ORE_DETECTOR.get());
                     }).build());
 

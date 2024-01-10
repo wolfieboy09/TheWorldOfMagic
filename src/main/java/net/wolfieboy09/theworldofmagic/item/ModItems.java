@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.wolfieboy09.theworldofmagic.TheWorldOfMagic;
+import net.wolfieboy09.theworldofmagic.item.custom.FuelItem;
 import net.wolfieboy09.theworldofmagic.item.custom.OreDetectorItem;
 
 public class ModItems {
@@ -22,6 +23,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> ORANGE = ITEMS.register("orange",
             () -> new Item(new Item.Properties().food(ModFoods.ORANGE)));
+
+    public static final RegistryObject<Item> BURNABLE_CRYSTAL = ITEMS.register("burnable_crystal",
+            () -> new FuelItem(new Item.Properties(), 400));
 
     public static final RegistryObject<Item> RAW_CLOUDIUM = ITEMS.register("raw_cloudium",
             () -> new Item(new Item.Properties()));
