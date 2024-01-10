@@ -19,8 +19,15 @@ public class ModItems {
 
     public static final RegistryObject<Item> CLOUDIUM = ITEMS.register("cloudium",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> ORANGE = ITEMS.register("orange",
+            () -> new Item(new Item.Properties().food(ModFoods.ORANGE)));
+
     public static final RegistryObject<Item> RAW_CLOUDIUM = ITEMS.register("raw_cloudium",
             () -> new Item(new Item.Properties()));
+
+
+
     public static final RegistryObject<Item> ORE_DETECTOR = ITEMS.register("ore_detector",
             () -> new OreDetectorItem(new Item.Properties()
                     .stacksTo(1)
