@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.wolfieboy09.theworldofmagic.TheWorldOfMagic;
+import net.wolfieboy09.theworldofmagic.block.custom.Steamer;
 import net.wolfieboy09.theworldofmagic.item.ModItems;
 
 import java.util.function.Supplier;
@@ -23,9 +24,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> WITHERED_GRASS_BLOCK = registerBlock("withered_grass_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).sound(SoundType.SOUL_SAND)));
 
-    // Might need to change to IRON_BLOCK or something
+
     public static final RegistryObject<Block> CLOUDIUM_BLOCK = registerBlock("cloudium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+
+    public static final RegistryObject<Block> STEAMER = registerBlock("steamer",
+            () -> new Steamer(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
