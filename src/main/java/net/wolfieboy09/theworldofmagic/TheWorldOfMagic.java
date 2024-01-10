@@ -46,6 +46,8 @@ public class TheWorldOfMagic {
         } else if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RAW_CLOUDIUM);
             event.accept(ModItems.CLOUDIUM);
+        } else if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.ORANGE);
         }
     }
 }
