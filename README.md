@@ -13,6 +13,8 @@ Current items in the mod are:
 - Withered Grass Block
   - For a biome called the "Withered Fields"
   - Stepping on one without special boots may cause withering.
+ 
+  - More items are in the mod, but are not listed here yet
 
 Biomes that are planned:
 - Levitated Heights
