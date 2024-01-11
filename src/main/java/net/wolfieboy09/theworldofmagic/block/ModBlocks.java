@@ -1,5 +1,6 @@
 package net.wolfieboy09.theworldofmagic.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -27,6 +28,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CLOUDIUM_BLOCK = registerBlock("cloudium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+
+    public static final RegistryObject<Block> CLOUDIUM_ORE = registerBlock("cloudium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> STEAMER = registerBlock("steamer",
             () -> new Steamer(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
