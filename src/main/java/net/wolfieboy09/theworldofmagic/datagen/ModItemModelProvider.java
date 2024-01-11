@@ -3,7 +3,6 @@ package net.wolfieboy09.theworldofmagic.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
@@ -25,8 +24,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BURNABLE_CRYSTAL);
     }
 
-    private ItemModelBuilder simpleItem(@NotNull RegistryObject<Item> item) {
-        return withExistingParent(item.getId().getPath(),
+    private void simpleItem(@NotNull RegistryObject<Item> item) {
+        withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(TheWorldOfMagic.MOD_ID, "item/" + item.getId().getPath()));
     }
