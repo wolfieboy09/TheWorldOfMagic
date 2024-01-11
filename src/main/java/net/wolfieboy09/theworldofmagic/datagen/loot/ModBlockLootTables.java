@@ -27,13 +27,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.CLOUDIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.STEAMER.get());
         this.dropSelf(ModBlocks.WITHERED_GRASS_BLOCK.get());
 
         this.add(ModBlocks.CLOUDIUM_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.CLOUDIUM_ORE.get(), ModItems.RAW_CLOUDIUM.get()));
     }
 
-    protected LootTable.@NotNull Builder createCopperLikeOreDrops(@NotNull Block pBlock, @NotNull Item item) {
+    protected @NotNull LootTable.Builder createCopperLikeOreDrops(@NotNull Block pBlock, @NotNull Item item) {
         return createSilkTouchDispatchTable(pBlock,
                 this.applyExplosionDecay(pBlock, LootItem.lootTableItem(item)
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
