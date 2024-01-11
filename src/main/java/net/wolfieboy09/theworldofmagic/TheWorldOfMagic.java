@@ -34,8 +34,6 @@ public class TheWorldOfMagic {
 
     private void commonSetup(final FMLCommonSetupEvent event) {}
 
-    // IDE told me to put @NotNull in
-
     private void addCreative(@NotNull BuildCreativeModeTabContentsEvent  event) {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.BEGINNER_STAFF);
