@@ -30,6 +30,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CLOUDIUM.get());
                         pOutput.accept(ModBlocks.CLOUDIUM_BLOCK.get());
 
+                        pOutput.accept(ModBlocks.STEAMER.get());
+
                         pOutput.accept(ModItems.ORE_DETECTOR.get());
                     }).build());
 

@@ -1,4 +1,16 @@
 {
+
+  "item.theworldofmagic.burnable_crystal": "Burnable Crystal",
+  "item.theworldofmagic.raw_cloudium": "Raw Cloudium",
+  "item.theworldofmagic.cloudium": "Cloudium",
+  "item.theworldofmagic.beginner_staff": "Beginner Staff",
+  "item.theworldofmagic.withered_grass_block": "Withered Grass Block",
+  "item.theworldofmagic.orange": "Orange",
+  "block.theworldofmagic.cloudium_block": "Cloudium Block",
+  "item.theworldofmagic.ore_detector": "Ore Detector",
+  "block.theworldofmagic.steamer": "Steamer",
+
   "tooltip.theworldofmagic.ore_detector.tooltip": "Finds ores underground",
+
   "creativetab.theworldofmagic_main_title_name": "The World Of Magic"
 }

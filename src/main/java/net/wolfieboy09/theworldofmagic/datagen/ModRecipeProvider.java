@@ -1,4 +1,4 @@
-package net.kaupenjoe.tutorialmod.datagen;
+package net.wolfieboy09.theworldofmagic.datagen;
 
 import net.wolfieboy09.theworldofmagic.TheWorldOfMagic;
 import net.wolfieboy09.theworldofmagic.TheWorldOfMagic;
