@@ -20,15 +20,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     private static final List<ItemLike> CLOUDIUM_SMELTABLES = List.of(ModItems.RAW_CLOUDIUM.get(),
             ModBlocks.CLOUDIUM_ORE.get());
 
-    public ModRecipeProvider(PackOutput pOutput) {
-        super(pOutput);
-    }
+    private static final List<ItemLike> WITHERITE_SMELTABLES = List.of(ModItems.RAW_WITHERITE.get(),
+            ModBlocks.WITHERITE_ORE.get());
+
+    public ModRecipeProvider(PackOutput pOutput) { super(pOutput); }
 
 
     @Override
     protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
         oreSmelting(recipeOutput, CLOUDIUM_SMELTABLES, RecipeCategory.MISC, ModItems.CLOUDIUM.get(), 0.25f, 200, "cloudium");
         oreBlasting(recipeOutput, CLOUDIUM_SMELTABLES, RecipeCategory.MISC, ModItems.CLOUDIUM.get(), 0.25f, 100, "cloudium");
+
+        oreSmelting(recipeOutput, WITHERITE_SMELTABLES, RecipeCategory.MISC, ModItems.WITHERITE_INGOT.get(), 0.25f, 200, "witherite");
+        oreBlasting(recipeOutput, WITHERITE_SMELTABLES, RecipeCategory.MISC, ModItems.WITHERITE_INGOT.get(), 0.25f, 100, "witherite");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CLOUDIUM_BLOCK.get())
                 .pattern("CCC")
@@ -37,6 +41,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', ModItems.CLOUDIUM.get())
                 .unlockedBy(getHasName(ModItems.CLOUDIUM.get()), has(ModItems.CLOUDIUM.get()))
                 .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.WITHERITE_BLOCK.get())
+                .pattern("WWW")
+                .pattern("WWW")
+                .pattern("WWW")
+                .define('W', ModItems.WITHERITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.WITHERITE_INGOT.get()), has(ModItems.WITHERITE_INGOT.get()))
+                .save(recipeOutput);
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CLOUDIUM.get(), 9)
                 .requires(ModBlocks.CLOUDIUM_BLOCK.get())

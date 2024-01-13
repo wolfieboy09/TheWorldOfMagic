@@ -33,6 +33,12 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(2f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> WITHERITE_ORE = registerBlock("witherite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> WITHERITE_BLOCK = registerBlock("witherite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE)));
     public static final RegistryObject<Block> STEAMER = registerBlock("steamer",
             () -> new Steamer(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
