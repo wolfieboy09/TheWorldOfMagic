@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ORANGE.get());
 
                         pOutput.accept(ModItems.BURNABLE_CRYSTAL.get());
+                        pOutput.accept(ModItems.BURNING_CRYSTAL.get());
 
                         pOutput.accept(ModItems.RAW_CLOUDIUM.get());
                         pOutput.accept(ModItems.CLOUDIUM.get());

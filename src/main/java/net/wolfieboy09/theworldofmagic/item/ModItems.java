@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.wolfieboy09.theworldofmagic.TheWorldOfMagic;
+import net.wolfieboy09.theworldofmagic.item.custom.BurningCrystal;
 import net.wolfieboy09.theworldofmagic.item.custom.FuelItem;
 import net.wolfieboy09.theworldofmagic.item.custom.OreDetectorItem;
 
@@ -35,6 +36,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> BURNABLE_CRYSTAL = ITEMS.register("burnable_crystal",
             () -> new FuelItem(new Item.Properties(), 400));
+
+    public static final RegistryObject<Item> BURNING_CRYSTAL = ITEMS.register("burning_crystal",
+            () -> new BurningCrystal(new Item.Properties()));
 
 
 
