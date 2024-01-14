@@ -19,16 +19,18 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.CLOUDIUM);
         simpleItem(ModItems.RAW_CLOUDIUM);
-        simpleItem(ModItems.BEGINNER_STAFF);
+
         simpleItem(ModItems.ORANGE);
+
         simpleItem(ModItems.BURNABLE_CRYSTAL);
-        simpleItem(ModItems.BURNABLE_CRYSTAL);
+        simpleItem(ModItems.BURNING_CRYSTAL);
+
         simpleItem(ModItems.RAW_WITHERITE);
         simpleItem(ModItems.WITHERITE_INGOT);
 
         complexItem(ModItems.BEGINNER_STAFF);
         complexItem(ModItems.ORE_DETECTOR);
-        }
+    }
 
     private void simpleItem(@NotNull RegistryObject<Item> item) {
         withExistingParent(item.getId().getPath(),
@@ -40,7 +42,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("0",
                 new ResourceLocation(TheWorldOfMagic.MOD_ID, "item/" + item.getId().getPath()));
-
     }
 
 }
