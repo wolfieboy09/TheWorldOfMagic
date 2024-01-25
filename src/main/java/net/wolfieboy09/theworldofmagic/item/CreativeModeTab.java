@@ -2,7 +2,6 @@ package net.wolfieboy09.theworldofmagic.item;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -10,11 +9,11 @@ import net.minecraftforge.registries.RegistryObject;
 import net.wolfieboy09.theworldofmagic.TheWorldOfMagic;
 import net.wolfieboy09.theworldofmagic.block.ModBlocks;
 
-public class ModCreativeModeTabs {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+public class CreativeModeTab {
+    public static final DeferredRegister<net.minecraft.world.item.CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TheWorldOfMagic.MOD_ID);
-    public static final RegistryObject<CreativeModeTab> THEWORLDOFMAGIC_MAIN_TAB = CREATIVE_MODE_TABS.register("theworldofmagic_main_title_name",
-            () -> CreativeModeTab.builder()
+    public static final RegistryObject<net.minecraft.world.item.CreativeModeTab> THEWORLDOFMAGIC_MAIN_TAB = CREATIVE_MODE_TABS.register("theworldofmagic_main_title_name",
+            () -> net.minecraft.world.item.CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.BURNABLE_CRYSTAL.get()))
                     .title(Component.translatable("creativetab.theworldofmagic_main_title_name"))
                     .displayItems((pParameters, pOutput) -> {

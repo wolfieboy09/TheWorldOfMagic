@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.wolfieboy09.theworldofmagic.block.ModBlocks;
-import net.wolfieboy09.theworldofmagic.item.ModCreativeModeTabs;
+import net.wolfieboy09.theworldofmagic.item.CreativeModeTab;
 import net.wolfieboy09.theworldofmagic.item.ModItems;
 import org.jetbrains.annotations.NotNull;
 
@@ -22,7 +22,7 @@ public class TheWorldOfMagic {
     public  TheWorldOfMagic() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModCreativeModeTabs.register(modEventBus);
+        CreativeModeTab.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 

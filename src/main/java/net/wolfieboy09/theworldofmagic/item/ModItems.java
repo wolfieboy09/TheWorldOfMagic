@@ -28,7 +28,7 @@ public class ModItems {
 
     // FOODS
     public static final RegistryObject<Item> ORANGE = ITEMS.register("orange",
-            () -> new Item(new Item.Properties().food(ModFoods.ORANGE)));
+            () -> new Item(new Item.Properties().food(Foods.ORANGE)));
 
     // RAW ORES
     public static final RegistryObject<Item> RAW_CLOUDIUM = ITEMS.register("raw_cloudium",
