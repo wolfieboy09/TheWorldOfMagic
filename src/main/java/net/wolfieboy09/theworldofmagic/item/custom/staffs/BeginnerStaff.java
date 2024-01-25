@@ -1,4 +1,4 @@
-package net.wolfieboy09.theworldofmagic.item.custom;
+package net.wolfieboy09.theworldofmagic.item.custom.staffs;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;

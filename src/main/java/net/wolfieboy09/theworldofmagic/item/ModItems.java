@@ -6,7 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.wolfieboy09.theworldofmagic.TheWorldOfMagic;
-import net.wolfieboy09.theworldofmagic.item.custom.BeginnerStaff;
+import net.wolfieboy09.theworldofmagic.item.custom.staffs.BeginnerStaff;
 import net.wolfieboy09.theworldofmagic.item.custom.BurningCrystal;
 import net.wolfieboy09.theworldofmagic.item.custom.FuelItem;
 import net.wolfieboy09.theworldofmagic.item.custom.OreDetectorItem;
