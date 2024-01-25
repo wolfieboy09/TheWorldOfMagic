@@ -16,23 +16,26 @@ public class CreativeModeTab {
             () -> net.minecraft.world.item.CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.BURNABLE_CRYSTAL.get()))
                     .title(Component.translatable("creativetab.theworldofmagic_main_title_name"))
-                    .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.BEGINNER_STAFF.get());
+                    .displayItems((pParameters, populate) -> {
+                        populate.accept(ModItems.BEGINNER_STAFF.get());
 
-                        pOutput.accept(ModBlocks.WITHERED_GRASS_BLOCK.get());
+                        populate.accept(ModBlocks.WITHERED_GRASS_BLOCK.get());
+                        populate.accept(ModItems.RAW_WITHERITE.get());
+                        populate.accept(ModItems.WITHERITE_INGOT.get());
 
-                        pOutput.accept(ModItems.ORANGE.get());
 
-                        pOutput.accept(ModItems.BURNABLE_CRYSTAL.get());
-                        pOutput.accept(ModItems.BURNING_CRYSTAL.get());
+                        populate.accept(ModItems.ORANGE.get());
 
-                        pOutput.accept(ModItems.RAW_CLOUDIUM.get());
-                        pOutput.accept(ModItems.CLOUDIUM.get());
-                        pOutput.accept(ModBlocks.CLOUDIUM_BLOCK.get());
+                        populate.accept(ModItems.BURNABLE_CRYSTAL.get());
+                        populate.accept(ModItems.BURNING_CRYSTAL.get());
 
-                        pOutput.accept(ModBlocks.STEAMER.get());
+                        populate.accept(ModItems.RAW_CLOUDIUM.get());
+                        populate.accept(ModItems.CLOUDIUM.get());
+                        populate.accept(ModBlocks.CLOUDIUM_BLOCK.get());
 
-                        pOutput.accept(ModItems.ORE_DETECTOR.get());
+                        populate.accept(ModBlocks.STEAMER.get());
+
+                        populate.accept(ModItems.ORE_DETECTOR.get());
                     }).build());
 
     public static void register(IEventBus eventBus) { CREATIVE_MODE_TABS.register(eventBus); }

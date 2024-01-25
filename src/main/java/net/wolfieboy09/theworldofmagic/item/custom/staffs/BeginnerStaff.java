@@ -1,6 +1,5 @@
 package net.wolfieboy09.theworldofmagic.item.custom.staffs;
 
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -15,7 +14,7 @@ public class BeginnerStaff extends Item {
     }
 
     @Override
-    public InteractionResultHolder<ItemStack> use(@NotNull Level pLevel, @NotNull Player pPlayer, @NotNull InteractionHand pUsedHand) {
+    public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level pLevel, @NotNull Player pPlayer, @NotNull InteractionHand pUsedHand) {
         return super.use(pLevel, pPlayer, pUsedHand);
     }
 
