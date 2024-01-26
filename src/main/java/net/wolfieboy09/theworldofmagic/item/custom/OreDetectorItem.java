@@ -3,6 +3,7 @@ package net.wolfieboy09.theworldofmagic.item.custom;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -12,6 +13,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.wolfieboy09.theworldofmagic.sound.ModSounds;
 import net.wolfieboy09.theworldofmagic.util.ModTags;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -39,13 +41,16 @@ public class OreDetectorItem extends Item {
                     outputValuableCoordinates(positionClicked.below(i), player, state.getBlock());
                     foundBlock = true;
 
+                    pContext.getLevel().playSeededSound(null, positionClicked.getX(), positionClicked.getY(), positionClicked.getZ(),
+                            ModSounds.ORE_DETECTOR_FOUND_ORE.get(), SoundSource.BLOCKS, 1f, 1f, 0);
+
                     break;
                 }
             }
 
             if(!foundBlock) {
                 assert player != null;
-                player.sendSystemMessage(Component.literal("No valuables Found!"));
+                player.sendSystemMessage(Component.translatable("fails.theworldofmagic.ore_detector_no_ore_found"));
             }
         }
 

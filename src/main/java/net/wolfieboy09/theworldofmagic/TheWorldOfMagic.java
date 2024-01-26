@@ -11,6 +11,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.wolfieboy09.theworldofmagic.block.ModBlocks;
 import net.wolfieboy09.theworldofmagic.item.CreativeModeTab;
 import net.wolfieboy09.theworldofmagic.item.ModItems;
+import net.wolfieboy09.theworldofmagic.sound.ModSounds;
 import org.jetbrains.annotations.NotNull;
 
 @Mod(TheWorldOfMagic.MOD_ID)
@@ -25,6 +26,8 @@ public class TheWorldOfMagic {
         CreativeModeTab.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

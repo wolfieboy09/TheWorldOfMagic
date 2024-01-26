@@ -1,6 +1,5 @@
 package net.wolfieboy09.theworldofmagic.block;
 
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -48,7 +47,7 @@ public class ModBlocks {
         return toReturn;
     }
 
-    // IDE said that the "return" statement was never being used, a nd made it a void function
+    // IDE said that the "return" statement was never being used, and made it a void function
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }

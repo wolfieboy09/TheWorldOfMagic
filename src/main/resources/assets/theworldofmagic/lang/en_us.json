@@ -11,6 +11,12 @@
   "block.theworldofmagic.steamer": "Steamer",
 
   "tooltip.theworldofmagic.ore_detector.tooltip": "Finds ores underground",
+  "tooltip.theworldofmagic.beginner_staff.tooltip": "Your first ever staff!",
 
-  "creativetab.theworldofmagic_main_title_name": "The World Of Magic"
+  "creativetab.theworldofmagic_main_title_name": "The World Of Magic",
+
+  "fails.theworldofmagic.ore_detector_no_ore_found": "No valuables Found",
+
+  "sounds.theworldofmagic.ore_detector_found_ore": "Ore Detector Found Ore",
+  "sounds.theworldofmagic.beginner_staff_use": "Beginner Staff Use"
 }

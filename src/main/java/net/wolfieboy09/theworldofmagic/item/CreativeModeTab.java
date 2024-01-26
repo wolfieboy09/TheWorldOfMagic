@@ -9,6 +9,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.wolfieboy09.theworldofmagic.TheWorldOfMagic;
 import net.wolfieboy09.theworldofmagic.block.ModBlocks;
 
+
 public class CreativeModeTab {
     public static final DeferredRegister<net.minecraft.world.item.CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TheWorldOfMagic.MOD_ID);

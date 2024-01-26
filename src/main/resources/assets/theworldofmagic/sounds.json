@@ -1,0 +1,14 @@
+{
+  "ore_detector_found_ore": {
+    "subtitles": "sounds.theworldofmagic.ore_detector_found_ore",
+    "sounds": [
+      "theworldofmagic:ore_detector_found_ore"
+    ]
+  },
+  "beginner_staff_use": {
+    "subtitles": "sounds.theworldofmagic.beginner_staff_use",
+    "sounds": [
+      "theworldofmagic:beginner_staff_use"
+    ]
+  }
+}
