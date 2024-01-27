@@ -21,6 +21,7 @@ public class BeginnerStaff extends Item {
 
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level pLevel, @NotNull Player pPlayer, @NotNull InteractionHand pUsedHand) {
+        
         return super.use(pLevel, pPlayer, pUsedHand);
     }
 

@@ -1,8 +1,7 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"0": "theworldofmagic:item/beginner_staff",
-		"particle": "theworldofmagic:item/beginner_staff"
+		"0": "theworldofmagic:item/beginner_staff"
 	},
 	"elements": [
 		{
